@@ -1,0 +1,21 @@
+h1 {
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  background-color: green;
+  text-align: left;
+  font-size: medium;
+  font-weight: normal;
+}
+
+h3 {
+  display: inline-block;
+  background-color: orange;
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 6px 4px;
+}
