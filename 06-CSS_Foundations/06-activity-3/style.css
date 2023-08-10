@@ -1,26 +1,79 @@
 body {
   background-color: rgb(173, 173, 173);
-}
-
-ul {
-  list-style-type: none;
-  background-color: ;
-}
-
-.ph-scale-header {
-  text-align: left;
-  background-color: #f6f7f8a0;
-  border: 1px solid #f6f7f8a0;
-  border-radius: 1px;
-
-  width: 98.9%;
-  margin: 20px 0;
-  padding: 10px;
-}
-
-.ph-scale-header h1 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: rgb(112, 112, 112);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: rgb(84, 81, 81);
+  padding: 12px;
+  background-color: rgba(228, 224, 224, 0.819);
+}
+
+div {
+  color: white;
+}
+
+p {
+  padding: 2px;
+  margin: 0px;
+}
+
+.one {
+  background: #;
+}
+
+.two {
+  background: #;
+}
+
+.three {
+  background: #;
+}
+
+.four {
+  background: #;
+}
+
+.five {
+  background: #;
+}
+
+.six {
+  background: #00c5f6;
+}
+
+.seven {
+  background: #;
+}
+
+.eight {
+  background: rgb(40, 191, 85);
+}
+
+.nine {
+  background: pink;
+}
+
+.ten {
+  background: #;
+}
+
+.eleven {
+  background: #;
+}
+
+.twelve {
+  background: #;
+}
+
+.thirteen {
+  background: ;
+}
+
+.fourteen {
+  background: #;
+}
+
+.fifteen {
+  background: ;
 }
