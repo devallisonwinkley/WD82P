@@ -1,0 +1,48 @@
+h1,
+p {
+  background-color: #dde0e3;
+}
+
+em,
+strong {
+  background-color: #b2d6ff;
+}
+
+h1 {
+  padding: 50px;
+  border: 5px dashed #5d6063;
+  /* margin-bottom: 50px; */
+}
+
+/* p {
+  border: 5px dotted yellow;
+} */
+
+/* 
+.first {
+  padding: 5px;
+}
+
+.second {
+  padding: 10px 5px;
+} */
+
+p {
+  padding: 20px 0 20px 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+div {
+  color: #fff;
+  background-color: #5995da;
+  text-align: center;
+
+  font-weight: bold;
+  padding: 20px;
+  border: 2px solid #5d6063;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  width: 200px;
+}
