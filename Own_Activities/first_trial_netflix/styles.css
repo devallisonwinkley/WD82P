@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url(images/Netflix-Background.jpg) no-repeat center center fixed;
+}
+
+.header-container {
+  color: #fff;
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-logo {
+  padding: 1em 5em;
+}
+
+.signin-button {
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  font-weight: bolder;
+
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 5px;
+
+  width: 130px;
+  margin: 20px 30px;
+  cursor: pointer;
+}
