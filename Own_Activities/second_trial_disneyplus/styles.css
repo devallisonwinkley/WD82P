@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/background.jpg);
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.login-btn {
+  color: #fff;
+  background-color: #063ea0;
+  font-weight: bold;
+
+  padding: 10px;
+  border: 2px solid rgb(0, 1, 88);
+  border-radius: 10px;
+
+  width: 100px;
+  margin: 1.5em;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.disney-logo {
+  text-align: center;
+  margin-top: 250px;
+}
+
+.main-content {
+  color: #fff;
+  /* background-color: black; */
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.sub-btn-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+.subscribe-btn {
+  color: #fff;
+  background-color: #063ea0;
+  font-weight: bold;
+  text-align: center;
+
+  padding: 20px;
+  border: 2px solid rgb(0, 1, 88);
+  border-radius: 10px;
+
+  width: 350px;
+  /* margin: 20px 600px; */
+
+  cursor: pointer;
+}
