@@ -5,9 +5,12 @@
 }
 
 h1 {
+  font-size: 40px;
   margin-top: 100px;
 }
 
 .list-items {
+  font-size: 50px;
+
   list-style-type: none;
 }
