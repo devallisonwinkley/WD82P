@@ -1,0 +1,13 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 100px;
+}
+
+.list-items {
+  list-style-type: none;
+}
