@@ -164,7 +164,8 @@
   margin: 5px auto;
 
   display: flex;
-
+  justify-content: space-between;
+  font-size: 15px;
   border: 1px solid #fff;
   height: 200px;
 }
