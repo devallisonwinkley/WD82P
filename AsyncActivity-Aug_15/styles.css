@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 50px;
+}
+
+.social-logos {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
