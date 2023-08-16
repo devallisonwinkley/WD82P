@@ -123,11 +123,11 @@ em {
   flex: 1;
 }
 
-.message-me-form {
+.contact-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 37%;
 }
 
 .contact-title {
@@ -137,10 +137,17 @@ em {
 
 .contact-content {
   font-size: 20px;
+  width: 600px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
 }
 
 .form-row {
   background-color: transparent;
+  display: flex;
 }
 
 .footer {
