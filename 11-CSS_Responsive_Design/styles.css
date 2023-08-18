@@ -52,6 +52,7 @@
 
 .content {
   background-color: #eaedf0;
+  height: 600px;
 }
 
 .sign-up {
@@ -68,4 +69,30 @@
 
 .feature-3 {
   background-color: #c8c6fa;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sign-up,
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.3%;
+  }
+
+  .sign-up {
+    order: 1;
+    height: 200px;
+  }
+
+  .content {
+    order: 2;
+  }
 }
