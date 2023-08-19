@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  background-color: aliceblue;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 2.5fr 1fr 8fr 1fr;
+
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  border: 1px solid black;
+  grid-column: 1 /2;
+  grid-row: 2 / 3;
+
+  background-color: blanchedalmond;
+}
