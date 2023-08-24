@@ -5,6 +5,11 @@
   align-content: center;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 h1 {
   font-size: 25px;
   padding: 1em;
@@ -15,4 +20,26 @@ h1 {
   list-style-type: none;
   margin-top: 0;
   text-align: center;
+}
+
+.kodego {
+  background-color: lightskyblue;
+  margin: 10% 10px;
+}
+
+.personal {
+  background-color: lightslategrey;
+  margin: 10% 10px;
+}
+
+.links:hover {
+  color: rgb(96, 190, 95);
+}
+
+.links:link {
+  color: rgb(96, 190, 95);
+}
+
+.links:visited {
+  color: rgb(96, 190, 95);
 }
