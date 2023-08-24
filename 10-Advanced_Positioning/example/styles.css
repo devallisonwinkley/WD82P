@@ -26,6 +26,15 @@ a:hover {
   background-color: #d6e9fe;
   align-items: center;
 }
+
+.logo {
+  width: 50%;
+}
+
+.logo img {
+  width: 100%;
+}
+
 .menu {
   display: flex;
   list-style-type: none;
@@ -42,7 +51,7 @@ a:hover {
   padding-top: 60px;
   position: absolute;
   top: -25px;
-  left: -20px;
+  left: -50px;
   z-index: 1;
 }
 .dropdown:hover .features-menu {
@@ -53,6 +62,7 @@ a:hover {
   list-style: none;
   border-bottom: 1px solid #fff;
   padding: 10px 40px 10px 20px;
+  /* text-align: right; */
 }
 .features-menu li:last-of-type {
   border-bottom: none;
@@ -60,4 +70,18 @@ a:hover {
 .features {
   z-index: 2;
   position: relative;
+}
+
+.md-menu-links {
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  .dropdown {
+    display: none;
+  }
+
+  .md-menu-links {
+    display: block;
+  }
 }
