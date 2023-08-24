@@ -15,7 +15,7 @@ body {
   background-attachment: fixed;
 }
 
-/* HAMBURGER MENU */
+/* START HAMBURGER MENU */
 #menu__toggle {
   opacity: 0;
 }
@@ -86,7 +86,7 @@ body {
 .menu__item:hover {
   background-color: #7dd8ff;
 }
-/* HAMBURGER MENU */
+/* END OF HAMBURGER MENU */
 
 /* START OF HEADER */
 .header-container {
@@ -100,7 +100,7 @@ body {
   padding: 50px 0px;
 }
 
-.header-links a {
+/* .header-links a {
   text-decoration: none;
   color: bisque;
 }
@@ -111,7 +111,7 @@ body {
 
 .header-links a:active {
   color: cyan;
-}
+} */
 
 .header-name {
   font-size: 17px;
@@ -131,39 +131,64 @@ body {
   padding: 80px 20px;
 
   font-weight: bolder;
+
+  position: fixed;
+  top: 5em;
+  width: 100%;
+}
+
+.content-img {
+  position: fixed;
+  top: 15%;
+  left: 60%;
+  width: 100%;
+  height: 19%;
 }
 
 .content-one {
   display: flex;
   font-size: 20px;
-  margin-top: 1px;
-  margin-bottom: 5px;
-
   justify-content: left;
+
+  margin-top: 7%;
+  margin-left: 20px;
 }
 
 .content-two {
   display: flex;
   font-size: 30px;
   font-weight: bold;
-
   justify-content: left;
+
+  margin-left: 20px;
 }
 
 .content-three {
   display: flex;
   font-size: 20px;
-  margin: 30px 0px;
+  margin-top: 25%;
 
   justify-content: left;
 }
 
 .content-four {
   display: flex;
-  font-size: 15.5px;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 15px;
   margin-top: 30px;
 
   justify-content: left;
+}
+
+p1 {
+  background-color: rgb(30, 30, 30);
+  opacity: 0.8;
+}
+
+p2 {
+  background-color: rgb(30, 30, 30);
+  opacity: 0.8;
 }
 /* END OF MAIN CONTENT */
 
@@ -175,7 +200,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 280px;
+  height: 19%;
 }
 
 .social-links a {
@@ -202,7 +227,7 @@ i {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 8%;
 }
 /* END OF FOOTER */
 
