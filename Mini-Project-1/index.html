@@ -12,18 +12,35 @@
   </head>
   <body>
     <header class="header-container">
-      <div class="header-links">
-        <a href="/Mini-Project-1/index.html">Home</a>
+      <!-- <div class="header-links">
+        <a href="/Mini-Project-1/index.html"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+      </div> -->
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li>
+            <a class="menu__item" href="/Mini-Project-1/index.html">Home</a>
+          </li>
+          <li>
+            <a class="menu__item" href="/Mini-Project-1/experiences.html"
+              >Experiences</a
+            >
+          </li>
+          <li>
+            <a class="menu__item" href="/Mini-Project-1/projects.html"
+              >Projects</a
+            >
+          </li>
+        </ul>
       </div>
-      <div class="header-links">
-        <a href="/Mini-Project-1/about.html">About</a>
-      </div>
-      <div class="header-links">
-        <a href="/Mini-Project-1/projects.html">Projects</a>
-      </div>
-      <div class="header-links">
-        <a href="/Mini-Project-1/resume.html">Resume</a>
-      </div>
+
       <div class="header-name">devallisonwinkley</div>
     </header>
 
@@ -63,8 +80,6 @@
       </div>
     </section>
 
-    <footer>
-      <div class="footer-content">&copy; devallisonwinkley 2023</div>
-    </footer>
+    <section class="footer">&copy; devallisonwinkley 2023</section>
   </body>
 </html>
