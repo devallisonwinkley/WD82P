@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* START OF NAV CONTENT */
+.header-container {
+  color: #fff;
+  background-color: rgb(30, 30, 30);
+
+  padding: 50px 15px;
+  align-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  width: 10%;
+}
+
+.fa-mobile-screen {
+  font-size: 9px;
+}
+/* END OF HEADER */
+
+/* START OF MAIN CONTENT */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 30px 15px 10px 25px;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+
+  margin-top: 1.7em;
+}
+
+h3 {
+  margin: 15px 0px 15px 0px;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+  margin: 15px 0px 40px 25.5px;
+}
+
+.resume-btn {
+  background-color: #3b3b3b;
+  padding: 7px;
+  border-radius: 14px;
+}
+
+.button-one {
+  color: #fff;
+
+  background-color: #3b3b3b;
+  border: 1px solid transparent;
+}
+
+.portfolio-btn {
+  background-color: #3b3b3b;
+  padding: 7px;
+  border-radius: 14px;
+}
+
+.button-two {
+  color: #fff;
+
+  background-color: #3b3b3b;
+  border: 1px solid transparent;
+}
+
+/* START OF FOOTER */
+i {
+  font-size: 25px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1em;
+  list-style-type: none;
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  margin-top: 45px;
+}
+/* END OF FOOTER */
