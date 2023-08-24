@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Allison Winkley</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -13,13 +13,12 @@
   <body>
     <header class="header-container">
       <nav class="nav-content">
-        <div class="nav-links"><a href="#">HOME</a></div>
-        <div class="nav-links"><a href="#">ABOUT</a></div>
-        <div class="nav-links"><a href="#">RESUME</a></div>
-        <div class="nav-links"><a href="#">PORTFOLIO</a></div>
+        <div class="nav-links"><a class="page-links" href="#">HOME</a></div>
+        <div class="nav-links"><a class="page-links" href="#">ABOUT</a></div>
+        <div class="nav-links"><a class="page-links" href="#">PROJECTS</a></div>
 
-        <div class="nav-number">
-          <i class="fa-solid fa-mobile-screen"> +63 917 102 9932</i>
+        <div class="nav-logo">
+          <p class="header-logo">devallisonwinkley</p>
         </div>
       </nav>
     </header>
@@ -50,24 +49,70 @@
       </div>
     </section>
 
-    <footer>
-      <ul class="social-links">
-        <li>
-          <a href="#"><i class="fa-brands fa-square-github"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-telegram"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-viber"></i></a>
-        </li>
-      </ul>
-    </footer>
+    <section class="contact"></section>
+    <div class="container">
+      <h3>Feel Free To Reach Out!</h3>
+      <form action="#" name="contact_form">
+        <label for="first_name"></label>
+        <input
+          name="first_name"
+          type="text"
+          required
+          placeholder="First Name"
+        />
+        <br />
+        <label for="last_name"></label>
+        <input name="last_name" type="text" placeholder="Last Name" />
+        <br />
+        <label for="email"></label>
+        <input
+          name="email"
+          type="email"
+          required
+          placeholder="email@domain.com"
+        />
+        <br />
+        <label for="message"></label>
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="What's on your mind?"
+        >
+        </textarea>
+        <div class="center">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <div class="social-footer">
+      <footer class="social-media">
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/devallisonwinkley" target="_blank"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/allison-winkley-1464a2242/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/alezon97" target="_blank"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/winkley18/" target="_blank"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
