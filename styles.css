@@ -7,7 +7,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 h1 {
@@ -28,6 +28,11 @@ h1 {
 }
 
 .personal {
+  background-color: lightslategrey;
+  margin: 10% 10px;
+}
+
+.projects {
   background-color: lightslategrey;
   margin: 10% 10px;
 }
