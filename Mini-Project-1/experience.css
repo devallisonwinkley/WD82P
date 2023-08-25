@@ -1,6 +1,6 @@
 * {
   margin: auto;
-  padding: 0;
+  padding: auto;
   box-sizing: border-box;
 }
 
@@ -100,19 +100,6 @@ body {
   padding: 50px 0px;
 }
 
-/* .header-links a {
-  text-decoration: none;
-  color: bisque;
-}
-
-.header-links a:hover {
-  color: grey;
-}
-
-.header-links a:active {
-  color: cyan;
-} */
-
 .header-name {
   font-size: 17px;
   font-weight: bold;
@@ -130,72 +117,14 @@ body {
 /* END OF HEADER */
 
 /* START OF MAIN CONTENT */
-.main-container {
-  color: #fff;
-  padding: 5% 5%;
-
-  font-weight: bolder;
-}
-
-.content-img {
-  position: relative;
-  top: 10%;
-  right: -2%;
-  text-align: right;
+.main-exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 img {
-  width: 168px;
-  border: 5px solid transparent;
-  border-radius: 950px;
-}
-
-.content-one {
-  display: flex;
-  font-size: 20px;
-  justify-content: left;
-
-  margin-top: -32%;
-  margin-left: 5%;
-}
-
-.content-two {
-  display: flex;
-  font-size: 30px;
-  font-weight: bold;
-  justify-content: left;
-
-  margin-left: 10%;
-}
-
-.content-three {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  margin-top: 22%;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.content-four {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  font-size: 15px;
-  margin-top: 7%;
-
-  justify-content: left;
-}
-
-p1 {
-  background-color: rgb(30, 30, 30);
-  opacity: 0.8;
-}
-
-p2 {
-  background-color: rgb(30, 30, 30);
-  opacity: 0.8;
+  width: 275px;
 }
 /* END OF MAIN CONTENT */
 
@@ -267,67 +196,6 @@ i {
     position: relative;
     top: 10%;
     left: -5%;
-  }
-
-  img {
-    width: 270px;
-    border: 5px solid transparent;
-    border-radius: 950px;
-  }
-
-  .content-one {
-    display: flex;
-    font-size: 41px;
-    justify-content: left;
-
-    position: absolute;
-    margin-top: -25%;
-    margin-left: 8%;
-  }
-
-  .content-two {
-    display: flex;
-    font-size: 55px;
-    justify-content: left;
-
-    position: absolute;
-    margin-top: -18%;
-    margin-left: 10%;
-  }
-
-  .content-three {
-    display: flex;
-    flex-direction: column;
-    font-size: 35px;
-
-    justify-content: left;
-
-    position: absolute;
-    margin-top: 7%;
-    margin-left: 13%;
-  }
-
-  .content-four {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    font-size: 27px;
-
-    justify-content: left;
-
-    position: relative;
-    margin-top: 23%;
-    width: 100%;
-  }
-
-  p1 {
-    background-color: rgb(30, 30, 30);
-    opacity: 0.8;
-  }
-
-  p2 {
-    background-color: rgb(30, 30, 30);
-    opacity: 0.8;
   }
 
   .social-links {
