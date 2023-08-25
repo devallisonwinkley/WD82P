@@ -118,6 +118,10 @@ body {
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 5.5px;
+
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
 }
 
 .header-name:hover {
@@ -128,21 +132,14 @@ body {
 /* START OF MAIN CONTENT */
 .main-container {
   color: #fff;
-  padding: 80px 20px;
+  padding: 5% 5%;
 
   font-weight: bolder;
-
-  position: fixed;
-  top: 5em;
-  width: 100%;
 }
 
 .content-img {
   position: fixed;
-  top: 15%;
-  left: 60%;
-  width: 100%;
-  height: 19%;
+  margin-left: 50%;
 }
 
 .content-one {
@@ -150,8 +147,8 @@ body {
   font-size: 20px;
   justify-content: left;
 
-  margin-top: 7%;
-  margin-left: 20px;
+  margin-top: 15%;
+  margin-left: 5.5%;
 }
 
 .content-two {
@@ -160,13 +157,13 @@ body {
   font-weight: bold;
   justify-content: left;
 
-  margin-left: 20px;
+  margin-left: 5.5%;
 }
 
 .content-three {
   display: flex;
   font-size: 20px;
-  margin-top: 25%;
+  margin-top: 17%;
 
   justify-content: left;
 }
@@ -174,9 +171,9 @@ body {
 .content-four {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
   font-size: 15px;
-  margin-top: 30px;
+  margin-top: 5%;
 
   justify-content: left;
 }
@@ -195,12 +192,13 @@ p2 {
 /* START OF SOCIAL LINKS */
 .social-links {
   display: flex;
-  padding: 5px;
+
+  /* padding: 1px; */
 
   position: fixed;
-  bottom: 0;
   width: 100%;
-  height: 19%;
+  bottom: 5%;
+  /* height: 19%; */
 }
 
 .social-links a {
@@ -225,9 +223,8 @@ i {
   align-items: center;
 
   position: fixed;
-  bottom: 0;
   width: 100%;
-  height: 8%;
+  bottom: 1%;
 }
 /* END OF FOOTER */
 
