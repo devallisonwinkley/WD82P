@@ -413,8 +413,6 @@ i {
   .prog-lang {
     display: grid;
     margin-bottom: 27px;
-
-    border: 1px solid cyan;
   }
 
   .exp-title {
