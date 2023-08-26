@@ -252,12 +252,16 @@ i {
     font-size: 30px;
   }
 
-  img {
-    width: 700px;
-  }
-
   h4 {
     font-size: 25px;
+  }
+
+  .proj-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    margin: 1em;
   }
 
   .project-details {
@@ -290,3 +294,108 @@ i {
   }
 }
 /* END OF TABLET VIEW */
+
+/* START OF DESKTOP VIEW */
+@media only screen and (min-width: 961px) {
+  .menu__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 1%;
+    left: -10%;
+    width: 425px;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .menu__btn {
+    display: none;
+  }
+
+  .header-container {
+    padding: 0;
+  }
+
+  .main-container {
+    font-size: 30px;
+    text-align: center;
+    padding: 1em;
+
+    margin-left: -2%;
+  }
+
+  .main-header-one {
+    text-align: center;
+  }
+
+  .main-header-two {
+    text-align: center;
+    margin-left: 5%;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  img {
+    height: 100%;
+    width: 30dvw;
+  }
+
+  .proj-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    margin: 1em;
+  }
+
+  .netflix {
+    padding: 1em;
+  }
+
+  .disney {
+    padding: 1em;
+  }
+
+  .boilthefrog {
+    padding: 1em;
+  }
+
+  .toffeeshare {
+    padding: 1em;
+
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .tech {
+    font-size: 17px;
+  }
+
+  a {
+    font-size: 17px;
+  }
+
+  .social-links {
+    display: flex;
+
+    padding-top: 4em;
+  }
+
+  .footer {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+
+    position: relative;
+    max-height: 100dvh;
+
+    padding: 1em;
+  }
+}
+/* END OF DESKTOP VIEW */
