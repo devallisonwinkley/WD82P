@@ -413,6 +413,10 @@ i {
   .prog-lang {
     display: grid;
     margin-bottom: 27px;
+
+    width: 175px;
+
+    border: 1px solid transparent;
   }
 
   .exp-title {
@@ -455,9 +459,6 @@ i {
 
     background-color: rgb(48, 47, 47);
     opacity: 0.9;
-
-    min-height: 0;
-    min-width: 0;
   }
 
   .lang-four {
@@ -502,6 +503,7 @@ i {
   }
 
   img {
+    max-width: 100%;
     width: 105px;
     height: 100%;
     text-align: center;
