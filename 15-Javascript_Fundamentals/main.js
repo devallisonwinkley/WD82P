@@ -55,11 +55,13 @@ Declare a constant variable max with the value 57
 Set another variable actual to max - 13
 Set another variable percentage to actual / max
 If you type percentage in the console and press Enter you should see a value like 0.7719*/
-const MAXVALUE = 57;
-let actualMaxValue = 13;
-let percentage = actualMaxValue / MAXVALUE;
+const MAX = 57;
+let actualToMax = 13;
+let percentage = actualToMax / MAX;
 
 console.log(percentage);
 
 /*6.Take a few minutes to keep playing around with various things in your script tag. Eventually, we will learn how to actually make those numbers and things show up on the webpage, but all of this logic will remain the same, so make sure you’re comfortable with it before moving on.*/
-alert("Hello there, fellow earthling! Check out what I did ;)");
+alert(
+  "Hello there, fellow earthling! Hit F12, go to 'Console', and check out what I did ^_^"
+);
