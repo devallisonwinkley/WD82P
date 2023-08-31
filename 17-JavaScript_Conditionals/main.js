@@ -66,18 +66,18 @@ if (grade < 75) {
   console.log("Excellent!");
 }
 
-/* ANOTHER WAY TO HAVE THIS ONE DISPLAYED
+//ANOTHER WAY TO HAVE THIS ONE DISPLAYED
+// let grade = 75;
+// let grade = parseInt(prompt("What is your grade?"));
 
-let grade = 75;
-
-if (grade < 75) {
-  console.log("Failed! Try again next quarter.");
-} else if (grade <= 80) {
-  console.log("Pass! Exert more effort.");
-} else if (grade <= 85) {
-  console.log("Good! Keep it up.");
-} else if (grade <= 90) {
-  console.log("Very good. A job well done!");
-} else {
-  console.log("Excellent!");
-} --! */
+// if (grade >= 90) {
+//   console.log("Excellent!");
+// } else if (grade >= 85) {
+//   console.log("Very good. A job well done!");
+// } else if (grade >= 80) {
+//   console.log("Good! Keep it up.");
+// } else if (grade >= 75) {
+//   console.log("Pass! Exert more effort.");
+// } else {
+//   console.log("Failed! Try again next quarter.");
+// }
