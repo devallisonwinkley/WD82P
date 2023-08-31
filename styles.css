@@ -49,15 +49,44 @@ a,
   text-decoration: none;
 }
 
+/* STYLE FOR KODEGO LESSONS AND ACTIVITIES */
 .links:hover {
-  text-decoration: bisque 2px underline;
+  text-decoration: rgb(64, 196, 61) 2.5px underline;
 }
 
 .links:link,
 .links:active {
-  color: rgb(210, 243, 139);
+  color: rgb(202, 80, 204);
 }
 
 .links:visited {
+  color: rgb(202, 80, 204);
+}
+
+/* STYLE FOR PERSONAL PROJECTS */
+.personal-links:hover {
+  text-decoration: cyan 2.5px underline;
+}
+
+.personal-links:link,
+.personal-links:active {
   color: rgb(210, 243, 139);
+}
+
+.personal-links:visited {
+  color: rgb(210, 243, 139);
+}
+
+/* STYLE FOR KODEGO PROJECTS */
+.projects-links:hover {
+  text-decoration: bisque 2.5px underline;
+}
+
+.projects-links:link,
+.projects-links:active {
+  color: rgb(255, 191, 88);
+}
+
+.projects-links:visited {
+  color: rgb(255, 191, 88);
 }
