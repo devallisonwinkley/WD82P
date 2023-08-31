@@ -50,12 +50,12 @@ a,
 }
 
 .links:hover {
-  color: rgb(255, 255, 255);
+  text-decoration: bisque 2px underline;
 }
 
 .links:link,
 .links:active {
-  color: rgb(255, 0, 0);
+  color: rgb(210, 243, 139);
 }
 
 .links:visited {
