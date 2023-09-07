@@ -10,19 +10,35 @@ alert("Asynchronous Activity - September 1, 2023");
 // - 'transaction3': Deduct 1000 from 'balance'.
 
 // Your code here
+// let balance = 1000;
+
+// let transaction1 = 500;
+// let transaction2 = 200;
+// let transaction3 = 1000;
+
+// console.log(balance + transaction1);
+// console.log(balance - transaction2);
+// console.log(balance - transaction3);
+
+// // Log the final 'balance' after all three transactions.
+// let finalBalance = balance + transaction1 - transaction2 - transaction3;
+// console.log(finalBalance);
+
+// EXERCISE 1 CORRECT CODE
+
 let balance = 1000;
+let transaction1, transaction2, transaction3;
 
-let transaction1 = 500;
-let transaction2 = 200;
-let transaction3 = 1000;
+transaction1 = balance + 500;
+balance = transaction1;
 
-console.log(balance + transaction1);
-console.log(balance - transaction2);
-console.log(balance - transaction3);
+transaction2 = balance - 200;
+balance = transaction2;
 
-// Log the final 'balance' after all three transactions.
-let finalBalance = balance + transaction1 - transaction2 - transaction3;
-console.log(finalBalance);
+transaction3 = balance - 1000;
+balance = transaction3;
+
+console.log(balance);
 
 // EXERCISE 2 //
 // Create three variables 'testScore1', 'testScore2', and 'testScore3' and assign them different test scores as numbers.
@@ -35,12 +51,21 @@ console.log(finalBalance);
 // let testScore3 = 92;
 // let averageScore = testScore1 + testScore2 + testScore3 / 3;
 
-const testScore1 = 78;
-const testScore2 = 84;
-const testScore3 = 92;
-const averageScore = Math.round((testScore1 + testScore2 + testScore3) / 3);
-// Log the 'averageScore' to the console.
-console.log(averageScore); //decimal result is 84.66666666666667
+// const testScore1 = 78;
+// const testScore2 = 84;
+// const testScore3 = 92;
+// const averageScore = Math.round((testScore1 + testScore2 + testScore3) / 3);
+// // Log the 'averageScore' to the console.
+// console.log(averageScore); //decimal result is 84.66666666666667
+
+// EXERCISE 2 CORRECT CODE
+
+const testScore1 = 90;
+const testScore2 = 80;
+const testScore3 = 70;
+const averageScore = Math.round(testScore1 + testScore2 + testScore3) / 3;
+
+console.log(averageScore);
 
 // EXERCISE 3 //
 // Create a variable called 'temperature' and assign it a temperature value in Celsius.
@@ -50,13 +75,23 @@ console.log(averageScore); //decimal result is 84.66666666666667
 // - If the temperature is below 20°C, log "It's a bit chilly."
 
 // Your code here
-const tempInCelsius = parseInt(prompt("How hot is it outside today?"));
-// console.log(typeof tempInCelsius);
+// const tempInCelsius = parseInt(prompt("How hot is it outside today?"));
+// // console.log(typeof tempInCelsius);
 
-if (tempInCelsius > 30) {
+// if (tempInCelsius > 30) {
+//   console.log("It's hot outside!");
+// } else if (tempInCelsius >= 20) {
+//   console.log("The weather is pleasant.");
+// } else {
+//   console.log("It's a bit chilly.");
+// }
+
+const temperature = 15;
+
+if (temperature > 30) {
   console.log("It's hot outside!");
-} else if (tempInCelsius >= 20) {
-  console.log("The weather is pleasant.");
+} else if (temperature > 20) {
+  console.log("The weather is pleasant");
 } else {
-  console.log("It's a bit chilly.");
+  console.log("It's a bit chilly");
 }
