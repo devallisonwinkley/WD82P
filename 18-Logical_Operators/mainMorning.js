@@ -1,3 +1,5 @@
+console.log("MORNING SESSION");
+
 //  Logical Operators ( AND - &&, or - ||)
 
 // And allows you to chain two expressions together so they can individually result to true.
