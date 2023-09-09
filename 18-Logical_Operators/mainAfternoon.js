@@ -154,3 +154,53 @@ console.log(addAndPrint(5, 5));
 console.log(subAndPrint(5, 5));
 console.log(multiplyAndPrint(5, 5));
 console.log(divideAndPrint(5, 5));
+
+function favouriteAnimal(animal) {
+  return animal + " is my favourite animal!";
+}
+
+console.log(favouriteAnimal("dog"));
+
+// const favouriteAnimal2 = (animal2) => animal2 + " is my favourite animal!";
+// let animal2 = horse;
+
+// ACTIVITy 1
+function combinedName(firstNeme, lastNeme) {
+  return firstNeme + " " + lastNeme;
+}
+
+console.log(combinedName("Allison", "Winkley"));
+console.log(combinedName("Jose", "Rizal"));
+console.log(combinedName("Pedro", "Laura"));
+
+function add7(num) {
+  return num + 7;
+}
+
+console.log(add7(2));
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+console.log(multiply(2, 3));
+
+// ACTIVITY 2
+
+function capitalize(string) {
+  const lowerString = string.toLowerCase(); // TO LOWER CASE ALL LETTERS
+  const firstLetter = lowerString.charAt(0); // TO GET THE FIRST CHARACTER
+  const capitalisedFirstLetter = firstLetter.toUpperCase(); // TO CAPITALISE ALL LETTERS
+
+  return capitalisedFirstLetter + lowerString.substring(1, 7);
+}
+
+console.log(capitalize("allison"));
+
+// another way to solve the activity - in an optimised way
+function capitalise(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+// you can also use string.substring instead of string.slice
+
+console.log(capitalise("winkley"));
