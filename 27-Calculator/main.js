@@ -37,6 +37,7 @@ function compute(prevNum, currentNum, operation) {
   return total;
 }
 
+// added clear function to make the clearBtn code shorter and cleaner
 function clear() {
   currentNum = "";
   prevNum = "";
