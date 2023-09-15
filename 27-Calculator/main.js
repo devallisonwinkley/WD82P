@@ -1,7 +1,7 @@
 const display = document.querySelector("input");
 const clearBtn = document.querySelector(".clear");
 const equalsBtn = document.querySelector(".equals");
-const numBtns = document.querySelectorAll(".num"); // select all items with num class
+const numBtns = document.querySelectorAll(".num");
 const operatorBtns = document.querySelectorAll(".operator");
 
 let currentNum = "";
@@ -44,7 +44,6 @@ function clear() {
   display.value = currentNum;
 }
 
-// Evet Listener
 clearBtn.addEventListener("click", clear);
 
 equalsBtn.addEventListener("click", function (e) {
@@ -52,7 +51,6 @@ equalsBtn.addEventListener("click", function (e) {
   display.value = currentNum;
 });
 
-// Loop for all the items with num class
 numBtns.forEach((numBtn) => {
   numBtn.addEventListener("click", function (e) {
     currentNum += e.target.textContent;
