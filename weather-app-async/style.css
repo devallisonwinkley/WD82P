@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.weather {
+  background-image: url(bg-img.jpg);
+  background-size: cover;
+  height: 100dvh;
+  width: 100dvw;
+
+  text-align: center;
+  padding: 5em;
+}
+
+#weather-container {
+  padding: 0.5em;
+  margin: 5em auto 0;
+  max-width: 500px;
+
+  border: 1px solid transparent;
+  border-radius: 35px;
+}
+
+#city-input,
+#search-btn {
+  padding: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+#city-input {
+  width: 280px;
+}
+
+#search-btn {
+  width: 75px;
+  cursor: pointer;
+}
+
+#search-btn:hover {
+  background-color: rgb(186, 210, 255);
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
