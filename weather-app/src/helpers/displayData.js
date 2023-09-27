@@ -1,7 +1,24 @@
-export default function displayData(data) {
-  const app = document.getElementById("app");
-  const p = document.createElement("p");
-  p.textContent = data.quote;
+export default function displayData(obj) {
+  const form = document.querySelector("form");
+  console.log(obj);
+  const prevArticle = document.querySelector(".card");
+  prevArticle.remove();
 
-  app.append(p);
+  const article = `
+  <article class="card">
+    <div class="weather-icon-container">
+     <img id="weather-icon" src="${
+       obj.weatherIcon
+     }" alt="An icon of the current weather" />
+    </div>
+   <div class="weather-data-container">
+      <h2 class="main-temp">${(obj.weatherData.main.temp - 273.15).toFixed(
+        2
+      )}°C</h2>
+      <p class="weather-main">${obj.weatherData.weather[0].main}</p>
+      <p class="date">${new Date()}</p>
+    </div>
+  </article>`;
+
+  form.innerHTML += article;
 }

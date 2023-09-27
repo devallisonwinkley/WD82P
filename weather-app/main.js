@@ -2,16 +2,21 @@ import "./style.css";
 import fetchData from "./src/helpers/fetchData";
 import displayData from "./src/helpers/displayData";
 
+const form = document.querySelector("form");
+
 async function main() {
+  e.preventDefault();
+
+  const location = document.getElementById("search").value;
+
+  if (location === "") return;
+
   const apiKey = "59fa57386ada2a8664847073a913e290";
-  const location = "Manila";
-  const weatherApiUrl =
-    "api.openweathermap.org/data/2.5/weather?q=${location}&appid=${openWeatherMapApiKey}";
-  const weatherIcon = "https://openweathermap.org/img/wn/${}.png";
+  const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
+  const weatherData = await fetchData(weatherApiUrl);
+  const weatherIcon = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
 
-  const data = await fetchData(url);
-
-  displayData(data);
+  displayData({ weatherData, weatherIcon });
 }
 
-main();
+form.addEventListener("submit", main);
