@@ -19,6 +19,10 @@ A repository containing all the code-along sessions of KodeGo Bootcamp Class WD-
 /_ Extra large devices (large laptops and desktops, 1200px and up) _/
 @media only screen and (min-width: 1200px) {...}
 
+@media only screen and (min-width: 401px) and (max-width: 960px) {}
+
+@media only screen and (min-width: 961px) {}
+
 # ADD RESUME LATER ON
 
 <div class="header-links">
