@@ -4,20 +4,17 @@ A repository containing all the code-along sessions of KodeGo Bootcamp Class WD-
 
 # MEDIA QUERY SIZES
 
-/_ Extra small devices (phones, 600px and down) _/
-@media only screen and (max-width: 600px) {...}
+/* Mobile, iPad, and Tablet Devices */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+}
 
-/_ Small devices (portrait tablets and large phones, 600px and up) _/
-@media only screen and (min-width: 600px) {...}
+/* Small Screen, Laptop, Desktop and large Screen Devices */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+}
 
-/_ Medium devices (landscape tablets, 768px and up) _/
-@media only screen and (min-width: 768px) {...}
-
-/_ Large devices (laptops/desktops, 992px and up) _/
-@media only screen and (min-width: 992px) {...}
-
-/_ Extra large devices (large laptops and desktops, 1200px and up) _/
-@media only screen and (min-width: 1200px) {...}
+/* Extra Large Screen and TV Devices */
+@media only screen and (min-width: 1201px) {
+}
 
 # ADD RESUME LATER ON
 
