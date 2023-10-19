@@ -1,15 +1,42 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Person from "./components/Person";
 import PersonForm from "./components/PersonForm";
 import Search from "./components/Search";
+import axios from "axios";
 
 function App() {
-  const [persons, setPersons] = useState([
-    { name: "Arto Hellas", number: "040-123456" },
-    { name: "Ada Lovelace", number: "39-44-5323523" },
-  ]);
+  const [persons, setPersons] = useState([]);
   const [results, setResults] = useState(persons);
+
+  // PURELY ASYNC AWAIT METHOD
+  // const fetchPersons = async () => {
+  //   const response = await fetch("http://localhost:3001/persons");
+  //   const data = await response.json();
+
+  //   setPersons(data);
+  //   setResults(data);
+  // };
+
+  // AWAIT ASYNC WITH AXIOS METHOD
+  // const fetchPersons = async () => {
+  //   const response = await axios.get("http://localhost:3001/persons");
+
+  //   setPersons(data);
+  //   setResults(data);
+  // };
+
+  // useEffect does not need to assign this to a variable
+  // Param1 = callback function
+  // Param2 = dependency array (so that the effect will only run once and not infinitely)
+  // useEffect(param1, param2)
+  // AXIOS METHOD
+  useEffect(() => {
+    axios.get("http://localhost:3001/persons").then((response) => {
+      setPersons(response.data);
+      setResults(response.data);
+    });
+  }, []);
 
   return (
     <div>
