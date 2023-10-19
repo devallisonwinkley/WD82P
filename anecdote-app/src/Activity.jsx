@@ -1,25 +1,29 @@
 import { useState } from "react";
+import React from "react";
 
-function Activity(props) {
-  const [courses, setCourses] = useState(props.courses);
+function Activity() {
+  // const [courses, setCourses] = useState(props.courses);
 
   // const courseList = courses.map((course) => <li>{course}</li>);
 
-  const totalExercisesOne = useState(0);
-  const totalExercisesTwo = useState(0);
+  // const totalExercisesOne = useState(0);
+  // const totalExercisesTwo = useState(0);
 
   return (
     <div>
-      <h1>ACTIVITY</h1>
+      <h1>Web Development Curriculum</h1>
+      <div>
+        {courses.map((course) => (
+          <Course key={course.id} course={course} />
+        ))}
+      </div>
 
-      <h2>Web Development Curriculum</h2>
-
-      <h3>Half Stack Application Development</h3>
+      {/* <h3>Half Stack Application Development</h3>
       <ul>
         {courses.map((course) => (
           <li key={course.parts}>{course.name}</li>
         ))}
-      </ul>
+      </ul> */}
 
       {/* {courses?.map((course) => {
         console.log(item);
@@ -30,7 +34,7 @@ function Activity(props) {
       {/* <ul> {courseList} </ul> */}
       {/* <h5>total of {totalExercisesOne} exercises</h5> */}
 
-      <h3>Node.JS</h3>
+      {/* <h3>Node.JS</h3> */}
       {/* <ul>
         {courses?.map((course) => (
           <li key={course[1]}>{course.content}</li>

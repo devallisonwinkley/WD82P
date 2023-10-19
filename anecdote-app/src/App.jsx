@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Course from "./components/Course";
 
 // Rendering a collection in react
 // For react to be able to run your list efficiently and properly, you should add a key attribute to your list
