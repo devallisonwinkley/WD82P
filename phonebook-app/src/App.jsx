@@ -3,7 +3,7 @@ import "./App.css";
 import Person from "./components/Person";
 import PersonForm from "./components/PersonForm";
 import Search from "./components/Search";
-import axios from "axios";
+import personService from "./services/persons";
 
 function App() {
   const [persons, setPersons] = useState([]);
@@ -31,10 +31,26 @@ function App() {
   // Param2 = dependency array (so that the effect will only run once and not infinitely)
   // useEffect(param1, param2)
   // AXIOS METHOD
+
+  // useEffect(() => {
+  //   // use .delete if you want to delete data
+  //   // use .host if you want to add new data
+  //   // axios.get("http://localhost:3001/persons").then((response) => {
+  //   //   setPersons(response.data);
+  //   //   setResults(response.data);
+  //   // });
+
+  //   personService.getAll().then((response) => {
+  //     setPersons(response.data);
+  //     setResults(response.data);
+  //   });
+  // }, []);
+
+  //Shorter and better code
   useEffect(() => {
-    axios.get("http://localhost:3001/persons").then((response) => {
-      setPersons(response.data);
-      setResults(response.data);
+    personService.getAll().then((initialPersons) => {
+      setPersons(initialPersons);
+      setResults(initialPersons);
     });
   }, []);
 
@@ -59,3 +75,6 @@ function App() {
 }
 
 export default App;
+
+// Rest - referring to individual objects as resources
+// For a better practice, we want to extract the communication to database into a module > under source and name the folder as services
