@@ -31,7 +31,7 @@ const notes = [
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Anecdote />
-    <App notes={notes} />
     <Activity />
+    <App notes={notes} />
   </React.StrictMode>
 );
