@@ -4,10 +4,12 @@ import Person from "./components/Person";
 import PersonForm from "./components/PersonForm";
 import Search from "./components/Search";
 import personService from "./services/persons";
+import Notification from "./components/Notification";
 
 function App() {
   const [persons, setPersons] = useState([]);
   const [results, setResults] = useState(persons);
+  const [notification, setNotification] = useState("");
 
   // PURELY ASYNC AWAIT METHOD
   // const fetchPersons = async () => {
@@ -57,17 +59,25 @@ function App() {
   return (
     <div>
       <h1>Phonebook App</h1>
+      <Notification notification={notification} />
       <Search persons={persons} setResults={setResults} />
       <h2>add a new</h2>
       <PersonForm
         persons={persons}
         setPersons={setPersons}
         setResults={setResults}
+        setNotification={setNotification}
       />
       <h2>Numbers</h2>
       <ul>
-        {results.map((person, index) => (
-          <Person key={index} name={person.name} number={person.number} />
+        {results.map((person) => (
+          <Person
+            key={person.id}
+            person={person}
+            persons={persons}
+            setPersons={setPersons}
+            setResults={setResults}
+          />
         ))}
       </ul>
     </div>
@@ -76,5 +86,15 @@ function App() {
 
 export default App;
 
+// -----------------
+
 // Rest - referring to individual objects as resources
 // For a better practice, we want to extract the communication to database into a module > under source and name the folder as services
+
+// -----------------
+
+// JSON server follows a rest convention - RESTful API
+// RESTful API is a convention/guide on how to design your API. It's a good practice to design your API based on it.
+// A specific item in a server is called a resource and every thing > resources
+// RESTful API has 4 HTTP methods you can use - GET, POST, UPDATE, DELETE | you can use these methods by using the resource's unique id
+// GET - fetching data | POST - creating a new resource | UPDATE -  | DELETE -

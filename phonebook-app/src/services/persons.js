@@ -20,7 +20,13 @@ function create(newObject) {
   return request.then((response) => response.data);
 }
 
+function deletePerson(id) {
+  const request = axios.delete(`${baseUrl}/${id}`);
+  return request.then((response) => response);
+}
+
 export default {
   getAll,
   create,
+  deletePerson,
 };
